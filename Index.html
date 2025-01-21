@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset='UTF8'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@500&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@500&family=Lato:wght@100;300;400&family=Merriweather:ital@0;1&family=Montserrat+Alternates:wght@300;400&family=Raleway:ital,wght@0,400;0,500;1,400&family=Shantell+Sans:ital,wght@0,300;0,400;1,300&family=Space+Mono&family=Special+Elite&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>La Suisse</title> 
+    
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 45% 55%; /* First column 45%, second column 55s% */
+            grid-template-rows: 20% 30% 50%; /* First row 20%, second row 20%, third row 60% */
+            grid-row-gap: 20px; /* Adds space between grid items */
+            grid-column-gap: 20px;
+            padding: 20px;
+            color: #322f2f;
+            position: relative;
+            height: 100vh; /* Ensure the body takes the full viewport height */
+            margin: 0; /* Remove any default margin from body */
+            font-family: "Delicious Handrawn";
+        }
+        
+    
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensure the pseudo-element covers the full width */
+            height: 100%; /* Ensure the pseudo-element covers the full height */
+            background-image: url("Resources/Images/Main_page.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.5; /* Apply opacity to the background image */
+            z-index: -1; /* Ensure the background image is behind the content */
+        }
+
+        h1 {
+            grid-column: span 2; /* Make the title span across both columns */
+            font-size: 70px;
+            text-align: left;
+            letter-spacing: 2px;
+            margin-left: 20px;
+        }
+        
+        h2 {
+            grid-column: span 2; /* Make this heading span across both columns */
+            font-size: 50px;
+            text-align: left;
+            margin-left: 20px;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 30px;
+            color: #322f2f;
+        }
+        
+        .spacing {
+            letter-spacing: 4px;
+        }
+
+        /* Position h3 elements in the 2nd column */
+        .schedule {
+            grid-column: 2; /* All schedule items will be in the 2nd column */
+            display: flex;
+            flex-direction: column;
+            grid-row-gap: 10px;
+        }
+            
+            
+  
+</style>
+
+</head> 
+        
+    
+<body>
+
+<h1>La Suisse</h1>
+<h2>Presentée par Emma Garric
+    
+    <br>
+    
+    M1A</h2>
+
+<div class="schedule">
+<h3>
+    <span class="spacing">LUNDI:</span>
+    <a href="Lundi/Drapeau_salutations.html" target="_blank">Drapeau &amp; Salutations</a> /
+    <a href="Lundi/Continent_Climate.html" target="_blank">Continent</a>
+
+<h3>
+    <span class="spacing">MERCREDI:</span>
+    <a href ="Mercredi/Cuisine.html" target="_blank">La cuisine de la Suisse</a>
+</h3>
+    
+<h3>
+    <span class="spacing">VENDREDI:</span>
+    <a href ="Vendredi/Cervin.html" target="_blank">Le Cervin</a> /
+    <a href ="Vendredi/Temps.html" target="_blank">Horloge, montre et le temps</a> 
+</h3>
+    
+<h3>
+    <span class="spacing">MARDI:</span>
+    <a href="Mardi/La_danse.html" target="_blank">La danse traditionnelle</a> / 
+    <a href="Mardi/Nemo.html" target="_blank">La musique moderne</a></h3>
+</h3>
+
+<h3>
+    <span class="spacing">JEUDI:</span>
+    <a href ="Jeudi/Animaux.html" target="_blank">Les animaux de la Suisse</a>
+</h3>
+
+    
+</div>
+    
+</body>
+    
+    
+    
+</html>
